@@ -86,8 +86,9 @@ img {
 .main-title {
   @extend .font-lg;
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   display: block;
+  border-bottom: 1px solid #000;
 }
 
 .sub-title {
