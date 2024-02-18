@@ -975,7 +975,7 @@ main {
     display: block;
   }
 }
-.side .insta-animate-title {
+.side .tween-animate-title {
   color: black;
   text-decoration: none !important;
   margin: 0 40px;
@@ -1020,4 +1020,7 @@ main {
 }
 .icon.insta::before {
   background-image: url(../images/insta.png);
+}
+.icon.git::before {
+  background-image: url(../images/git.png);
 }/*# sourceMappingURL=style.css.map */

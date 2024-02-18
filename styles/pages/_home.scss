@@ -258,7 +258,7 @@ main {
     display: block;
   }
 
-  & .insta-animate-title {
+  & .tween-animate-title {
     color: $cBlack;
     text-decoration: none !important;
     margin: 0 40px;
@@ -312,4 +312,7 @@ main {
   &.insta::before {
     background-image: url(../images/insta.png);
   }
+  &.git::before {
+    background-image: url(../images/git.png);
+}
 }
