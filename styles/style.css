@@ -918,17 +918,31 @@ main {
     transform: scaleX(1);
   }
 }
+.works {
+  width: 100%;
+}
+.works__inner {
+  margin: 0 auto;
+  text-align: center;
+}
+.works__inner2 {
+  padding: 0;
+  margin: 0;
+}
 .works__link {
   display: block;
   text-decoration: none;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 .works__link > img {
-  margin: auto;
+  margin: 0 auto;
   width: 50%;
   height: 50%;
   align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .works__title {
   color: black;
@@ -939,7 +953,8 @@ main {
   color: black;
 }
 .works__block {
-  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   height: 50%;
   list-style: none;
 }
