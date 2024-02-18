@@ -191,6 +191,49 @@ main {
   }
 }
 
+.works {
+  @extend .content-width;
+  @extend .mb-lg;
+
+  
+  &__link {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+
+    & > img {
+      margin: auto;
+      width: 50%;
+      height: 50%;
+      @extend .mb-sm;
+      align-items: center;
+      
+    }
+  }
+
+
+  &__title {
+    color: $cBlack;
+    text-decoration: none;
+    @extend .font-lr;
+  }
+
+  &__description {
+    text-decoration: none;
+    color: $cBlack;
+  }
+
+  &__block {
+    @include mq(md) {
+      margin-bottom: 60px;
+    }
+    padding: 0 10px;
+    height: 50%;
+    list-style: none;
+  }
+}
+
 
 
 .footer {
