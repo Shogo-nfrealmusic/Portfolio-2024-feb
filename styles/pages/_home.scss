@@ -1,5 +1,6 @@
 @use "../globals" as *;
 @use "../parts/common" as *;
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap");
 
 #container {
   position: relative;
@@ -247,6 +248,80 @@ main {
     height: 50%;
     list-style: none;
   }
+}
+
+.contact {
+  @extend .content-width;
+  @extend .mb-lg;
+  width: 100%;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    @extend .font-lr;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__form {
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    overflow: hidden;
+    margin-bottom: 20px;
+    @include mq(md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__label {
+    float: left;
+    margin-right: 10px;
+    width: 60px;
+    @include mq(md) {
+      margin-right: 20px;
+      width: 135px;
+      border-left: 3px solid #333;
+    }
+  }
+
+  &__inputs {
+    float: left;
+    width: 300px;
+  
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact__btn {
+    padding-right: 70px;
+  }
+}
+
+
+input[type="text"],
+input[type="email"] {
+  border: solid 1px #333;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+textarea {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  height: 160px;
+  width: 300px;
+  font-size: 15px;
 }
 
 
