@@ -976,9 +976,11 @@ main {
   margin-bottom: 20px;
   font-weight: bold;
 }
-.contact__form {
-  width: 460px;
-  margin: 0 auto;
+@media screen and (min-width: 600px) {
+  .contact__form {
+    width: 460px;
+    margin: 0 auto;
+  }
 }
 .contact__item {
   overflow: hidden;
@@ -1011,7 +1013,7 @@ main {
 
 @media screen and (max-width: 450px) {
   .contact__btn {
-    padding-right: 70px;
+    padding-right: none;
   }
 }
 input[type=text],
