@@ -6,8 +6,6 @@ class HeroSlider {
 
     _initSwiper() {
         return new Swiper(this.el, {
-            // Optional parameters
-            // direction: 'vertical',
             loop: true,
             grabCursor: true,
             effect: 'coverflow',
